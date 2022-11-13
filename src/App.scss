@@ -1,0 +1,46 @@
+.App {
+  text-align: center;
+}
+
+.slider {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  overflow: hidden;
+
+
+  .window {
+    display: flex;
+    position: relative;
+    transition: .4s;
+  }
+  .sildes {
+    transition: .4s;
+
+    &:nth-child(1) {
+      background-color: red;
+    }
+    &:nth-child(2) {
+      background-color: rgb(225, 255, 0);
+    }
+    &:nth-child(3) {
+      background-color: rgb(73, 24, 179);
+    }
+  }
+  .next {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    z-index: 100;
+  }
+  .prev {
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    z-index: 100;
+  }
+}
+
